@@ -5,7 +5,7 @@ Convert amount to words for cheque writing
 
 ## Installation
 
-    npm install chequeconvert
+    npm install -g chequeconvert
 
 
 ## Examples
