@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var generateWords = require('../');
+
+program
+  .description('Convert amount to words')
+  .arguments('<amount>')
+  .action(function(amount) {
+    console.log(generateWords(amount));
+  });
+
+program.parse(process.argv);
+
+// Show help when nothing is specified
+if (program.args.length === 0) {
+  program.help();
+}

@@ -1,0 +1,29 @@
+{
+  "name": "chequeconvert",
+  "version": "0.0.1",
+  "description": "Convert amount to words for cheque writing",
+  "keywords": [
+    "cheque",
+    "convert",
+    "chequeconvert",
+    "command"
+  ],
+  "author": "Ryan Liao <pirsquare.ryan@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pirsquare/chequeconvert-node.git"
+  },
+  "main": "index.js",
+  "bin": "./bin/chequeconvert",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --recursive"
+  },
+  "bin": "./bin/askme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  }
+}
