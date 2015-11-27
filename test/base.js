@@ -32,6 +32,16 @@ describe('Test Generate Word', function() {
   ret = generateWord("100, 000, 000, 000");
   assert.equal(ret, "One Hundred Billion Only");
 
+  // assert exception when empty value is provided
+  assert.throws(function() {
+    generateWord("");
+  }, Error);
+
+  // assert exception when only spaces is provided
+  assert.throws(function() {
+    generateWord("  ");
+  }, Error)
+
   // assert exception when more than 100 billion is provided
   assert.throws(function() {
     generateWord("100, 000, 000, 000.01");
