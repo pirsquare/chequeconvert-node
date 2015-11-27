@@ -1,6 +1,6 @@
 {
   "name": "chequeconvert",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert amount to words for cheque writing",
   "keywords": [
     "cheque",
